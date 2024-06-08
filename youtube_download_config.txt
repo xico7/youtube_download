@@ -1,0 +1,19 @@
+-f (bestvideo[height>2160][vcodec^=av01]/bestvideo[height>2160][vcodec^=vp9]/bestvideo[height>1440][vcodec^=av01]/bestvideo[height>1440][vcodec^=vp9][fps>30]/bestvideo[height>1440][vcodec^=vp9]/bestvideo[height>1080][vcodec^=av01]/bestvideo[height>1080][vcodec^=vp9][fps>30]/bestvideo[height>1080][vcodec^=vp9]/bestvideo[height>720][vcodec^=av01]/bestvideo[height>720][vcodec^=vp9][fps>30]/bestvideo[height>720][vcodec^=vp9]/bestvideo[height>240][vcodec^=av01]/bestvideo[vcodec^=vp9][fps>30]/bestvideo[height>240][vcodec^=vp9]/best[height>240]/bestvideo[vcodec^=av01]/bestvideo[vcodec^=vp9]/bestvideo)+(bestaudio[asr=48000]/bestaudio)/bestaudio[ext=opus]/best
+
+--write-sub
+
+--sub-lang en,en-US,en-CA,en-GB,en-IE,enUS
+
+--merge-output-format mkv
+
+--embed-subs
+
+--no-warnings
+
+--add-metadata
+
+--external-downloader aria2c
+
+--user-agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+
+--output 'C:\Users\chico\Desktop\Repos\Youtube_download\Downloaded_files\%(title)s.%(ext)s'
